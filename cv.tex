@@ -24,7 +24,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article} % Document font size and paper size
+\documentclass[11pt, letterpaper]{article} % Document font size and paper size
 
 \usepackage{fontspec} % Allows the use of OpenType fonts
 
@@ -45,8 +45,9 @@
 \setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
 \reversemarginpar
 
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Albert Einstein}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+%\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Albert Einstein}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+%\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{hyperref}
 
 %----------------------------------------------------------------------------------------
 %	FONT CONFIGURATIONS
@@ -56,21 +57,21 @@
 % To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
 
 % Linux Libertine Font (default)
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
-%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
-\sectionfont{\mdseries\upshape\Large} % Set font options for sections
-\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
-\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
-\chardef\&="E050 % Custom ampersand character
+% \setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+% %\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+% \sectionfont{\mdseries\upshape\Large} % Set font options for sections
+% \subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+% \subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+% \chardef\&="E050 % Custom ampersand character
 
 % Hoefler Text Font (bundled with Mac OSX)
-%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
-%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
-%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
-%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
-%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
-%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
-%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
 
 %----------------------------------------------------------------------------------------
 
@@ -80,48 +81,33 @@
 %	CONTACT AND GENERAL INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-{\LARGE Albert Einstein}\\[1cm] % Your name
-Institute for Advanced Study\\ % Your address
-Einstein Drive\\
-Princeton, N.J. \texttt{08540}
+{\LARGE Leo Singer}\\[1cm] % Your name
+California Institute of Technology\\ % Your address
+1200 E. California Blvd., MC 100-36\\
+Pasadena, CA 91101
 U.S.A.\\[.2cm]
-Phone: \texttt{609-734-8000}\\ % Your phone number
-Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
-Email: \href{mailto:a.einstein@ias.edu}{a.einstein@ias.edu}\\ % Your email address
-\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ % Your academic/personal website
+Phone: 301-633-9322\\ % Your phone number
+Email: \href{mailto:lsinger@caltech.edu}{lsinger@caltech.edu}\\ % Your email address
+%\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ % Your academic/personal website
 
 \vfill % Whitespace between contact information and specific CV information
 
 %------------------------------------------------
 
-Born: March 12, 1879---Ulm, Germany\\ % Your date of birth
-Nationality: German/American % Your nationality
+Born: August 16, 1986---Rolla, Missouri, U.S.A.\\ % Your date of birth
+Nationality: American % Your nationality
 
 %------------------------------------------------
 
 \section*{Current position}
 
-\emph{Emeritus Professor}, Institute for Advanced Study, Princeton % Your current or previous employment position
+Graduate Student, California Institute of Technology % Your current or previous employment position
 
 %------------------------------------------------
 
 \section*{Areas of specialization}
 
-Physics; Relativity Theory. % Your primary areas of research interest
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section*{Appointments held}
-
-\years{1903-1908}Swiss Patent Office, Bern\\
-\years{1908-1911}University of Bern\\
-\years{1911-1912}University of Zürich\\
-\years{1912-1914}Charles University of Prague\\
-\years{1914-1932}Prussian Academy of Sciences, Berlin\\
-\years{1920-1930}University of Leiden\\
-\years{1932-1955}Institute for Advanced Study, Princeton
+Physics; Astronomy; Gravitational Waves; Optical Transients; Bayesian Inference; Gamma-ray Bursts. % Your primary areas of research interest
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -129,8 +115,8 @@ Physics; Relativity Theory. % Your primary areas of research interest
 
 \section*{Education}
 
-\years{1900}\textsc{MSc} in Physics, ETH Zürich\\
-\years{1900}\textsc{PhD} in Physics, ETH Zürich
+\years{2009}\textsc{MSc} in Physics, University of Maryland\\
+\years{2013\\(anticipated)}\textsc{PhD} in Physics, California Institute of Technology
 
 %----------------------------------------------------------------------------------------
 %	GRANTS, HONORS AND AWARDS SECTION
@@ -138,7 +124,8 @@ Physics; Relativity Theory. % Your primary areas of research interest
 
 \section*{Grants, honors \& awards}
 
-\years{1921}Nobel Prize in Physics, Nobel Foundation
+\years{2010}Graduate Research Fellow, National Science Foundation\\
+\years{2012}Best Poster, LSC-Virgo Collaboration Meeting, Rome\\
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS AND TALKS SECTION
@@ -148,40 +135,20 @@ Physics; Relativity Theory. % Your primary areas of research interest
 
 \subsection*{Journal articles}
 
-\years{1901}Einstein, Albert (1901), “Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)", \emph{Annalen der Physik} 4: 513\\
-\years{1905a}Einstein, Albert (1905), “On a Heuristic Viewpoint Concerning the Production and Transformation of Light", \emph{Annalen der Physik} 17: 132–148.\\
-\years{1905b}Einstein, Albert (1905), A new determination of molecular dimensions. \emph{PhD dissertation}.\\
-\years{1905c}Einstein, Albert (1905), “On the Motion—Required by the Molecular Kinetic Theory of Heat—of Small Particles Suspended in a Stationary Liquid", \emph{Annalen der Physik} 17: 549–560.\\
-\years{1905d}Einstein, Albert (1905), “On the Electrodynamics of Moving Bodies", \emph{Annalen der Physik} 17: 891–921.\\
-\years{1905e}Einstein, Albert (1905), “Does the Inertia of a Body Depend Upon Its Energy Content?", \emph{Annalen der Physik} 18: 639–641.\\
-\years{1915}Einstein, Albert (1915), “Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)", \emph{Koniglich Preussische Akademie der Wissenschaften}: 844–847\\
-\years{1917a}Einstein, Albert (1917), “Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)", \emph{Koniglich Preussische Akademie der Wissenschaften}\\
-\years{1917b}Einstein, Albert (1917), “Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)", \emph{Physikalische Zeitschrift} 18: 121–128
+\years{2012}Cannon, K., Cariou, R., Chapman, A., Crispin-Ortuzar, M., Fotopoulos, N., Frei, M., Hanna, C., Kara, E., Keppel, D., Liao, L., Privitera, S., Searle, A., \textbf{Singer, L.} and Weinstein, A., “Toward Early-warning Detection of Gravitational Waves from Compact Binary Coalescence", \emph{Astrophysical Journal} 748: 136\\
+\years{2013}Dietz, A., Fotopoulos, N., \textbf{Singer, L.}, Cutler, C., “Outlook for detection of GW inspirals by GRB-triggered searches in the advanced detector era", \emph{Physical Review D} 87: 064033\\
+\years{2013}Robitaille, T., Tollerud, E., Greenfield, P., Droettboom, M., Bray, E., Aldcroft, T., Davis, M., Ginsburg, M., Price-Whelan, A., Kerzendorf, W., Conley, A., Crighton, N., Barbary, K., Muna, D., Ferguson, H., Grollier, F., Parikh, M., Nair, P., Günther, H., Deil, C., Woillez, J., Conseil, S., Kramer, R., Turner, J., \textbf{Singer, L.}, Fox, R., Weaver, B., Zabalza, V., Edwards, Z., Bostroem, K., Burke, D., Casey, A., Crawford, S., Dencheva, N., Ely, J., Jenness, T., Labrie, K., Lim, P. L., Pierfederici, F., Pontzen, A., Ptak, A., Refsdal, B., Servillat, M. and Streicher, O., “Astropy: A community Python package for astronomy", \emph{Astronomy \& Astrophysics} 558: A33\\
+\years{2013}\textbf{Singer, L.}, Cenko, S., Kasliwal, M., Perley, D. et al., “Discovery and Redshift of an Optical Afterglow in 71 deg$^2$: iPTF13bxl and GRB 130702A", \emph{Astrophysical Journal Letters} 776: 34\\
+\years{2013}\textbf{Singer, L.}, Price, L., Urban, A. and Pankow, C., “The First Two Years of Gravitational-Wave Astronomy with Advanced LIGO and Virgo", \emph{in preparation}\\
+\years{2013}\textbf{Singer, L.} and Price, L., “WHOOMP! (There It Is): Rapid Bayesian position reconstruction for gravitational-wave transients", \emph{in preparation}\\
 
 %------------------------------------------------
-
-\subsection*{Books}
-
-\years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
-
-%------------------------------------------------
-
-\subsection*{Newspaper articles}
-
-\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
-\years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
 
 %----------------------------------------------------------------------------------------
 %	TEACHING SECTION
 %----------------------------------------------------------------------------------------
 
 \section*{Teaching}
-
-...
-
-%------------------------------------------------
-
-\section*{Service to the profession}
 
 ...
 
