@@ -1,4 +1,7 @@
-cv.aux
-cv.log
-cv.out
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
 cv.pdf
