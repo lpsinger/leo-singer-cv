@@ -14,3 +14,8 @@ jobs:
         run: sudo apt-get -y install latexmk make texlive texlive-fonts-extra texlive-xetex
       - name: Run LaTeX
         run: make
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv
+          path: cv.pdf
